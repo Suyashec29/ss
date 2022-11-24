@@ -1,9 +1,11 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+/* ------------------------------------------------------------------------------------------- */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
   font-family: sans-serif;
   color: #555;
 }
@@ -20,20 +22,43 @@ h3 {
   font-size: 75px;
   text-transform: capitalize;
   background-color: antiquewhite;
-  border: 20px solid rgba(16, 152, 173, 0.3);
+  border: 30px solid rgba(16, 152, 173, 0.3);
   border-bottom-left-radius: 32px;
   border-bottom-right-radius: 32px;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
   text-align: left;
+  padding: 10px 0px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+nav {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+.about-author {
+  margin-bottom: 10px;
 }
 
 h2 {
   font-size: 35px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 15px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -45,23 +70,16 @@ h4 {
 p {
   font-size: 20px;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 
-/* footer p {
-  font-size: 14px;
-  font-family: serif;
-} */
+/* ------------------------------------------------------------------------------------------- */
 
+/*id selector*/
 #copyright-msg {
   font-size: 14px;
   font-family: serif;
 }
-
-/*
-article header p {
-  font-style: italic;
-}
-*/
 
 #article-info {
   color: grey;
@@ -69,14 +87,11 @@ article header p {
   font-size: 15px;
 }
 
+/*class selector*/
 .related-author {
   font-size: 19px;
   font-weight: bold;
 }
-
-/* #unordered-list {
-  list-style: none;
-} */
 
 .related-list {
   list-style: none;
@@ -84,21 +99,62 @@ article header p {
 
 li {
   font-size: 19px;
+  margin-bottom: 10px;
+  margin-left: 50px;
 }
 
-nav {
-  background-color: darkgray;
-  border: 20px solid darkgray;
-  border-bottom-left-radius: 64px;
-  border-bottom-right-radius: 64px;
-  border-top-left-radius: 64px;
-  border-top-right-radius: 64px;
+li:last-child {
+  margin-bottom: 0px;
+}
+/* ------------------------------------------------------------------------------------------- */
+/* Pseudo class */
+/* Misconeption, This won't work. */
+article p:first-child {
+  color: green;
 }
 
-button {
-  background-color: blanchedalmond;
-  font-size: 25px;
+/* Styling links. */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
 }
+
+/* When we have visited the site. */
+a:visited {
+  color: #1098ad;
+}
+
+/* When the pointer is on the link. */
+a:hover {
+  color: #1098ad;
+  font-weight: bold;
+}
+
+/* When you are clicking the link. */
+a:active {
+  color: rgb(25, 64, 219);
+  font-style: italic;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* Resolving selector's conflict. */
+
+/* #copyright-msg {
+  color: red;
+}
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important;
+} */
+
+/* ------------------------------------------------------------------------------------------- */
 
 aside {
   background-color: rgb(240, 240, 240);
@@ -108,4 +164,34 @@ aside {
   border-bottom-right-radius: 32px;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
+  padding: 30px 0px;
+  margin: 40px 0px;
 }
+
+/* Pseudoclass */
+/* li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(odd) {
+  color: red;
+} */
+
+/* #unordered-list {
+  list-style: none;
+} */
+
+/*
+article header p {
+  font-style: italic;
+}
+*/
+
+/* footer p {
+  font-size: 14px;
+  font-family: serif;
+} */

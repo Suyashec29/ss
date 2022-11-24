@@ -1,0 +1,86 @@
+body {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+#price {
+  color: grey;
+  font-size: 30px;
+}
+.head-title {
+  color: grey;
+  font-size: 40px;
+  font-family: serif;
+  background-color: lightgrey;
+  border: 30px solid darkgrey;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+
+.head-image:hover {
+  transition: transform 0.4s;
+  transform: scale(1.05);
+}
+
+.group-image:hover {
+  transition: transform 0.2s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.list-element {
+  list-style: square;
+}
+
+.all-links {
+  color: black;
+  background-color: rgb(198, 197, 197);
+  text-align: center;
+  text-decoration: none;
+}
+
+.links {
+  padding: 10px 10px;
+}
+
+.share {
+  padding: 3px 3px;
+}
+
+.links:hover,
+.link:active {
+  background-color: rgb(181, 181, 181);
+}
+
+.whatsapp {
+  background-color: rgb(69, 187, 69);
+}
+
+.whatsapp:hover {
+  background-color: rgb(60, 162, 60);
+}
+
+.facebook {
+  background-color: rgb(68, 131, 220);
+}
+.facebook:hover {
+  background-color: rgb(22, 110, 232);
+}
+
+.instagram {
+  background-color: rgb(169, 109, 169);
+}
+.instagram:hover {
+  background-color: rgb(152, 75, 152);
+}
+
+.twitter {
+  background-color: rgb(40, 119, 238);
+}
+.twitter:hover {
+  background-color: rgb(32, 98, 197);
+}

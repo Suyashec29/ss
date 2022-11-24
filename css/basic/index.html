@@ -11,38 +11,38 @@
 
   <body>
     <header>
-      <h1 id="main-head">📘 The Code Magazine</h1>
+      <div class="header-and-nav">
+        <h1 id="main-head" title="This is the header.">📘 The Code Magazine</h1>
 
-      <nav>
-        <a href="blog.html"><button>Blog</button></a>
-        <a href="challenges.html"><button>Challenges</button></a>
-        <a href="https://twitter.com/JavaScript" target="_blank"
-          ><button>JavaScript</button></a
-        >
-
-        <a href="https://twitter.com/elonmusk" target="_blank"
-          ><button>Twitter</button></a
-        >
-
-        <a href="#"><button>CSS</button></a>
-      </nav>
+        <nav>
+          <a href="blog.html">Blog</a>
+          <a href="challenges.html">Challenges</a>
+          <a href="https://twitter.com/JavaScript" target="_blank"
+            >JavaScript</a
+          >
+          <a href="https://twitter.com/elonmusk" target="_blank">Twitter</a>
+          <a href="#">CSS</a>
+        </nav>
+      </div>
     </header>
 
     <article>
-      <header>
+      <header class="post-header">
         <h2>The Basic Language of the Web: HTML</h2>
 
-        <img
-          src="images/laura-jones.jpg"
-          alt="image of Laura Jones, the author."
-          width="50"
-          height="50"
-        />
+        <div class="about-author">
+          <img
+            src="images/laura-jones.jpg"
+            alt="image of Laura Jones, the author."
+            width="50"
+            height="50"
+          />
 
-        <p id="article-info">
-          Posted by <strong>Laura Jones</strong> on Monday,
-          <em>November</em> 14th 2022.
-        </p>
+          <p id="article-info">
+            Posted by <strong>Laura Jones</strong> on Monday,
+            <em>November</em> 14th 2022.
+          </p>
+        </div>
 
         <img
           src="images/post-img.jpg"
@@ -167,7 +167,9 @@
     </aside>
 
     <footer>
-      <p id="copyright-msg">Copyright &copy; 2022 by The Code Magazine.</p>
+      <p id="copyright-msg" class="copyright text">
+        Copyright &copy; 2022 by The Code Magazine.
+      </p>
     </footer>
   </body>
 </html>
