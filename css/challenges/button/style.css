@@ -7,9 +7,8 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 15px 32px;
-  display: block;
   text-align: center;
-  margin: 20px;
+  margin: 5px;
 }
 
 /* ---------------------------------------------------------------------------------------------- */
@@ -17,7 +16,6 @@
   color: rgb(3, 68, 3);
   border: 3px solid rgb(86, 200, 87);
   background-color: rgb(87, 200, 87);
-  padding: 80px 100px;
 }
 
 .button0:hover {
