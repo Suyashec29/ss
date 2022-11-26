@@ -7,20 +7,21 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 15px 32px;
+  margin-top: 100px;
   text-align: center;
-  margin: 5px;
+  display: inline-block;
 }
 
 /* ---------------------------------------------------------------------------------------------- */
 .button0 {
   color: rgb(3, 68, 3);
-  border: 3px solid rgb(86, 200, 87);
+  border: 5px solid rgb(86, 200, 87);
   background-color: rgb(87, 200, 87);
 }
 
 .button0:hover {
   background-color: rgb(44, 162, 81);
-  border: 3px solid rgb(44, 162, 81);
+  border: 5px solid rgb(44, 162, 81);
 }
 
 .button0:active {
@@ -35,7 +36,7 @@
 
 .button1 {
   color: rgb(3, 67, 3);
-  border: 3px solid rgb(232, 88, 59);
+  border: 5px solid rgb(232, 88, 59);
   background-color: white;
 }
 
@@ -52,7 +53,7 @@
 
 .button2 {
   color: rgb(3, 67, 3);
-  border: 3px solid rgb(91, 216, 227);
+  border: 5px solid rgb(91, 216, 227);
   background-color: rgb(91, 216, 227);
 }
 
@@ -65,4 +66,30 @@
 }
 
 /* --------------------------------------------------------------------------------------------------- */
+.button3 {
+  color: darkgreen;
+  background-color: rgb(246, 209, 117);
+  border-bottom: 5px solid grey;
+  border-right: 5px solid grey;
+  margin-left: 5px;
+
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.button3:hover {
+  background-color: rgb(229, 196, 110);
+  cursor: pointer;
+}
+
+.button3:active {
+  background-color: rgb(220, 182, 85);
+  border-top: 5px solid grey;
+  border-left: 5px solid grey;
+  border-bottom: none;
+  border-right: none;
+}
+
 /* rgb(232, 8, 43) */
