@@ -14,6 +14,21 @@ body {
   border: 8px solid rgb(146, 156, 146);
 }
 
+.head-title {
+  color: grey;
+  font-size: 40px;
+  font-family: serif;
+  background-color: lightgrey;
+  border: 30px solid darkgrey;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  margin: 20px;
+  margin-bottom: 80px;
+}
+
 .price {
   color: grey;
   font-size: 30px;
@@ -32,24 +47,12 @@ body {
   font-weight: bold;
   margin-top: 0px;
 }
-.head-title {
-  color: grey;
-  font-size: 40px;
-  font-family: serif;
-  background-color: lightgrey;
-  border: 30px solid darkgrey;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  text-align: center;
-  margin: 20px;
-}
 
 .head-image {
   margin-left: 20px;
   width: 350;
   height: auto;
+  margin-bottom: 20px;
 }
 
 .head-image:hover {
@@ -65,6 +68,56 @@ body {
   transition: transform 0.2s;
   transform: scale(1.1);
   cursor: pointer;
+}
+
+.color-select {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.all-color {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.red-color {
+  width: 40px;
+  height: 30px;
+  background-color: rgb(231, 40, 40);
+  border: 2px solid rgb(231, 40, 40);
+}
+.red-color:hover {
+  border: 2px solid #000;
+}
+
+.green-color {
+  width: 40px;
+  height: 30px;
+  background-color: rgb(31, 157, 31);
+  border: 2px solid rgb(31, 157, 31);
+}
+.green-color:hover {
+  border: 2px solid #000;
+}
+
+.yellow-color {
+  width: 40px;
+  height: 30px;
+  background-color: goldenrod;
+  border: 2px solid goldenrod;
+}
+.yellow-color:hover {
+  border: 2px solid #000;
+}
+
+.grey-color {
+  width: 40px;
+  height: 30px;
+  background-color: darkgrey;
+  border: 2px solid darkgrey;
+}
+.grey-color:hover {
+  border: 2px solid #000;
 }
 
 .list-element {
