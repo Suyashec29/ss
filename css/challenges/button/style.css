@@ -34,7 +34,8 @@
 
 /* ---------------------------------------------------------------------------------------------- */
 
-.button1 {
+.button1,
+.button1:visited {
   color: rgb(3, 67, 3);
   border: 5px solid rgb(232, 88, 59);
   background-color: white;
@@ -51,7 +52,8 @@
 
 /* --------------------------------------------------------------------------------------------------- */
 
-.button2 {
+.button2,
+.button2:visited {
   color: rgb(3, 67, 3);
   border: 5px solid rgb(91, 216, 227);
   background-color: rgb(91, 216, 227);
@@ -66,7 +68,8 @@
 }
 
 /* --------------------------------------------------------------------------------------------------- */
-.button3 {
+.button3,
+.button3:visited {
   color: darkgreen;
   background-color: rgb(246, 209, 117);
   border-bottom: 5px solid grey;

@@ -26,7 +26,23 @@ body {
   border-bottom-right-radius: 10px;
   text-align: center;
   margin: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
+}
+
+h2 {
+  position: relative;
+}
+
+h2::before {
+  font-size: 22px;
+  font-family: sans-serif;
+  color: #fff;
+  content: "SALE";
+  background-color: #000;
+  position: absolute;
+  bottom: -95px;
+  left: -30px;
+  padding: 3px 7px;
 }
 
 .price {
@@ -84,40 +100,40 @@ body {
   width: 40px;
   height: 30px;
   background-color: rgb(231, 40, 40);
-  border: 2px solid rgb(231, 40, 40);
+  border: 3px solid rgb(231, 40, 40);
 }
 .red-color:hover {
-  border: 2px solid #000;
+  border: 3px solid rgba(0, 0, 0, 0.4);
 }
 
 .green-color {
   width: 40px;
   height: 30px;
   background-color: rgb(31, 157, 31);
-  border: 2px solid rgb(31, 157, 31);
+  border: 3px solid rgb(31, 157, 31);
 }
 .green-color:hover {
-  border: 2px solid #000;
+  border: 3px solid rgba(0, 0, 0, 0.4);
 }
 
 .yellow-color {
   width: 40px;
   height: 30px;
   background-color: goldenrod;
-  border: 2px solid goldenrod;
+  border: 3px solid goldenrod;
 }
 .yellow-color:hover {
-  border: 2px solid #000;
+  border: 3px solid rgba(0, 0, 0, 0.4);
 }
 
 .grey-color {
   width: 40px;
   height: 30px;
   background-color: darkgrey;
-  border: 2px solid darkgrey;
+  border: 3px solid darkgrey;
 }
 .grey-color:hover {
-  border: 2px solid #000;
+  border: 3px solid rgba(0, 0, 0, 0.4);
 }
 
 .list-element {
