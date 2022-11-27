@@ -1,0 +1,286 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #555;
+  border-top: 20px solid #1098ad;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-head {
+  color: #1098ad;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  margin-bottom: 60px;
+  background-color: #f7f7f7;
+}
+
+.main-title {
+  float: left;
+  font-family: serif;
+}
+
+nav {
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  float: right;
+  display: inline;
+}
+
+nav a:last-child {
+  padding-right: 10px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+aside {
+  background-color: rgb(240, 240, 240);
+  border-top: 7px solid #1098ad;
+  border-bottom: 7px solid #1098ad;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  padding: 30px 20px;
+  margin: 40px 0px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+.code-image {
+  width: 100%;
+  height: auto;
+}
+
+.about-author {
+  margin-bottom: 10px;
+}
+
+.like-button {
+  color: red;
+  font-size: 30px;
+  text-align: center;
+  position: absolute;
+  right: 250px;
+  bottom: 250px;
+}
+
+.first-para::first-letter {
+  font-family: cursive;
+  padding-right: 3px;
+  font-size: 50px;
+}
+
+.main-title::first-letter {
+  margin-left: 10px;
+}
+
+h2::before {
+  content: "Top";
+  font-size: 20px;
+  background-color: gold;
+  text-align: center;
+  padding: 2px 4px;
+  position: absolute;
+  top: -35px;
+}
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.article-info {
+  float: left;
+  margin-top: 8px;
+  margin-left: 25px;
+}
+
+.clear-fix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* .clear {
+  clear: both;
+} */
+
+/* p::first-line {
+  color: red;
+} */
+
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/*id selector*/
+#copyright-msg {
+  font-size: 14px;
+  font-family: serif;
+}
+
+#article-info {
+  color: grey;
+  font-style: italic;
+  font-size: 15px;
+}
+
+/*class selector*/
+.related-author {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.related-list {
+  list-style: none;
+  font-size: 22px;
+}
+
+.related-list li {
+  margin-bottom: 50px;
+}
+
+li:last-child {
+  margin-bottom: 0px;
+}
+
+.ordered-list {
+  margin-left: 40px;
+}
+
+.unordered-list {
+  margin-left: 40px;
+}
+
+/* Pseudo class */
+/* Misconeption, This won't work. */
+article p:first-child {
+  color: green;
+}
+
+/* Styling links. */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+/* When we have visited the site. */
+a:visited {
+  color: #1098ad;
+}
+
+/* When the pointer is on the link. */
+a:hover {
+  color: #1098ad;
+  font-weight: bold;
+}
+
+/* When you are clicking the link. */
+a:active {
+  color: rgb(25, 64, 219);
+  font-style: italic;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* Resolving selector's conflict. */
+
+/* #copyright-msg {
+  color: red;
+}
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important;
+} */
+
+/* Pseudoclass */
+/* li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(odd) {
+  color: red;
+} */
+
+/* #unordered-list {
+  list-style: none;
+} */
+
+/*
+article header p {
+  font-style: italic;
+}
+*/
+
+/* footer p {
+  font-size: 14px;
+  font-family: serif;
+} */
