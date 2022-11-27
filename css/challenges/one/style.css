@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -8,10 +9,12 @@ body {
   font-family: sans-serif;
   line-height: 1.4;
 }
-.container {
+.product {
   width: 900px;
   margin: 0 auto;
+  margin-top: 30px;
   border: 8px solid rgb(146, 156, 146);
+  position: relative;
 }
 
 .head-title {
@@ -27,22 +30,6 @@ body {
   text-align: center;
   margin: 20px;
   margin-bottom: 100px;
-}
-
-h2 {
-  position: relative;
-}
-
-h2::before {
-  font-size: 22px;
-  font-family: sans-serif;
-  color: #fff;
-  content: "SALE";
-  background-color: #000;
-  position: absolute;
-  bottom: -95px;
-  left: -30px;
-  padding: 3px 7px;
 }
 
 .price {
@@ -86,19 +73,30 @@ h2::before {
   cursor: pointer;
 }
 
+.sale {
+  color: white;
+  background-color: #ec2f2f;
+  padding: 3px 7px;
+  margin: 0;
+  display: inline-block;
+  position: absolute;
+  top: -22px;
+  left: -34px;
+}
+
 .color-select {
-  margin-left: 20px;
+  margin-left: 60px;
   margin-bottom: 20px;
 }
 
 .all-color {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .red-color {
-  width: 40px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background-color: rgb(231, 40, 40);
   border: 3px solid rgb(231, 40, 40);
 }
@@ -107,8 +105,8 @@ h2::before {
 }
 
 .green-color {
-  width: 40px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background-color: rgb(31, 157, 31);
   border: 3px solid rgb(31, 157, 31);
 }
@@ -117,8 +115,8 @@ h2::before {
 }
 
 .yellow-color {
-  width: 40px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background-color: goldenrod;
   border: 3px solid goldenrod;
 }
@@ -127,12 +125,32 @@ h2::before {
 }
 
 .grey-color {
-  width: 40px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background-color: darkgrey;
   border: 3px solid darkgrey;
 }
 .grey-color:hover {
+  border: 3px solid rgba(0, 0, 0, 0.4);
+}
+
+.blue-color {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(71, 208, 227);
+  border: 3px solid rgb(71, 208, 227);
+}
+.blue-color:hover {
+  border: 3px solid rgba(0, 0, 0, 0.4);
+}
+
+.magneta-color {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(197, 8, 96);
+  border: 3px solid rgb(197, 8, 96);
+}
+.magneta-color:hover {
   border: 3px solid rgba(0, 0, 0, 0.4);
 }
 
