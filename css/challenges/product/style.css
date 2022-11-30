@@ -8,12 +8,13 @@ body {
   font-size: 22px;
   font-family: sans-serif;
   line-height: 1.4;
+  margin-top: 100px;
 }
 .product {
   width: 900px;
   margin: 0 auto;
   margin-top: 30px;
-  border: 8px solid rgb(146, 156, 146);
+  border: 8px solid #000;
   position: relative;
 }
 
@@ -22,17 +23,12 @@ body {
   font-size: 40px;
   font-family: serif;
   background-color: lightgrey;
-  border: 30px solid darkgrey;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top: 20px solid darkgrey;
+  border-bottom: 20px solid darkgrey;
   text-align: center;
-  margin: 20px;
-  margin-bottom: 100px;
 }
 
-.price {
+#price {
   color: grey;
   font-size: 30px;
   margin-left: 20px;
@@ -40,11 +36,11 @@ body {
   display: inline;
 }
 
-.price:hover {
+#price:hover {
   color: darkgrey;
 }
 
-.shipping {
+#shipping {
   color: darkgrey;
   font-size: 17px;
   font-weight: bold;
@@ -53,24 +49,9 @@ body {
 
 .head-image {
   margin-left: 20px;
-  width: 350;
+  width: 250px;
   height: auto;
   margin-bottom: 20px;
-}
-
-.head-image:hover {
-  transition: transform 0.4s;
-  transform: scale(1.05);
-}
-
-.group-image {
-  margin-bottom: 20px;
-}
-
-.group-image:hover {
-  transition: transform 0.2s;
-  transform: scale(1.1);
-  cursor: pointer;
 }
 
 .sale {
@@ -87,11 +68,6 @@ body {
 .color-select {
   margin-left: 60px;
   margin-bottom: 20px;
-}
-
-.all-color {
-  display: inline-block;
-  margin-right: 20px;
 }
 
 .red-color {
@@ -182,11 +158,11 @@ h4 {
   margin-left: 20px;
 }
 
-.buy-now,
 .add-cart {
   color: #fff;
   background-color: #000;
-  border: 3px solid black;
+  border: 0px;
+  border-top: 3px solid black;
   text-align: center;
   font-size: 25px;
   text-align: center;
@@ -200,17 +176,7 @@ h4 {
 .add-cart:hover {
   color: #000;
   background-color: #fff;
-  border: 3px solid black;
-}
-
-.buy-now:hover {
-  color: #000;
-  background-color: #fff;
-  border: 3px solid black;
-}
-
-.buy-now {
-  margin-bottom: 20px;
+  border-top: 3px solid black;
 }
 
 .more-info {
@@ -236,55 +202,84 @@ h4 {
   margin-top: 20px;
 }
 
-.share {
-  padding: 3px 3px;
+.row {
+  display: flex;
+  gap: 50px;
+  align-items: center;
 }
 
-.whatsapp {
+.head-image {
+  flex-shrink: 0;
+  margin: 0px;
+  align-self: center;
+}
+
+.second-block {
+  flex-basis: 300px;
+  align-self: stretch;
+  flex: 1;
+}
+
+.second-block p {
+  font-size: 17px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.price-ship {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.color-select {
+  display: flex;
+  margin: 0px;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+#price {
+  font-size: 30px;
+  margin: 0px;
+}
+
+.more-info {
   color: #fff;
   text-decoration: none;
-  border: 2px solid black;
   background-color: #000;
+  border: 2px solid #000;
+  margin-bottom: 10px;
+  display: inline-block;
+  padding: 5px;
 }
 
-.whatsapp:hover {
-  border: 2px solid black;
-  color: #000;
-  background-color: #fff;
+.ratings {
+  font-size: 16px;
+  margin: 0px;
+  margin-bottom: 10px;
 }
 
-.facebook {
-  color: #fff;
-  text-decoration: none;
-  border: 2px solid black;
-  background-color: #000;
-}
-.facebook:hover {
-  border: 2px solid black;
-  color: #000;
-  background-color: #fff;
+#shipping {
+  margin: 0px;
 }
 
-.instagram {
-  color: #fff;
-  text-decoration: none;
-  border: 2px solid black;
-  background-color: #000;
-}
-.instagram:hover {
-  border: 2px solid black;
-  color: #000;
-  background-color: #fff;
+.head-image {
 }
 
-.twitter {
-  color: #fff;
-  text-decoration: none;
-  border: 2px solid black;
-  background-color: #000;
+.third-block {
+  align-self: stretch;
+  flex: 1;
 }
-.twitter:hover {
-  border: 2px solid black;
-  color: #000;
-  background-color: #fff;
+
+.product-detail {
+  font-size: 20px;
+  margin: 0px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.list-element {
+  font-size: 18px;
+  margin-left: 25px;
 }
