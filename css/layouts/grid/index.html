@@ -18,13 +18,13 @@
           <a href="blog.html">Blog</a>
           <a href="challenges.html">Challenges</a>
           <a href="#" target="_blank">JavaScript</a>
-          <a href="#" target="_blank">Twitter</a>
-          <a href="#">CSS</a>
+          <a href="/layouts/flexbox/flexbox.html" target="_blank">Flexbox</a>
+          <a href="/layouts/flexbox/css-grid.html">CSS Grid</a>
         </nav>
         <!-- <div class="clear"></div> -->
       </header>
 
-      <article>
+      <article class="article-body">
         <header class="post-header">
           <h2>The Basic Language of the Web: HTML</h2>
 
@@ -116,57 +116,69 @@
         <p>Hopefully you learned something new here. See you next time!</p>
       </article>
 
-      <aside>
+      <aside class="aside">
         <h4>Related Posts</h4>
         <ul class="related-list">
           <li>
-            <img
-              src="/images/codeMagazine/related-1.jpg"
-              alt="Person coding on a laptop"
-              height="75"
-              width="75"
-            />
-            <a
-              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"
-              target="_blanck"
-              >Responsive Web Design</a
-            >
-            <p class="related-author">By FreeCodeCamp</p>
+            <div class="related-img-info">
+              <img
+                src="/images/codeMagazine/related-1.jpg"
+                alt="Person coding on a laptop"
+                height="75"
+                width="75"
+              />
+              <div class="related-info-block">
+                <a
+                  href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"
+                  target="_blanck"
+                  >Responsive Web Design</a
+                >
+                <p class="related-author">By FreeCodeCamp</p>
+              </div>
+            </div>
           </li>
 
           <li>
-            <img
-              src="https://www.freecodecamp.org/news/content/images/size/w2000/2022/07/kobu-agency-ipARHaxETRk-unsplash.jpg"
-              alt="Books lying on the table"
-              height="60"
-              width="75"
-            />
-            <a
-              href="https://www.freecodecamp.org/news/learn-css/"
-              target="_blanck"
-              >Learn CSS</a
-            >
-            <p class="related-author">By Jessica Wilkins</p>
+            <div class="related-img-info">
+              <img
+                src="https://www.freecodecamp.org/news/content/images/size/w2000/2022/07/kobu-agency-ipARHaxETRk-unsplash.jpg"
+                alt="Books lying on the table"
+                height="60"
+                width="75"
+              />
+              <div class="related-info-block">
+                <a
+                  href="https://www.freecodecamp.org/news/learn-css/"
+                  target="_blanck"
+                  >Learn CSS</a
+                >
+                <p class="related-author">By Jessica Wilkins</p>
+              </div>
+            </div>
           </li>
 
           <li>
-            <img
-              src="https://www.freecodecamp.org/news/content/images/size/w2000/2021/12/greg-rakozy-vw3Ahg4x1tY-unsplash.jpg"
-              alt="Books kept vertically supported by a pot."
-              height="60"
-              width="75"
-            />
-            <a
-              href="https://www.freecodecamp.org/news/learn-javascript-free-js-courses-for-beginners/"
-              target="_blank"
-              >Learn JavaScript</a
-            >
-            <p class="related-author">By Jessica Wilkins</p>
+            <div class="related-img-info">
+              <img
+                src="https://www.freecodecamp.org/news/content/images/size/w2000/2021/12/greg-rakozy-vw3Ahg4x1tY-unsplash.jpg"
+                alt="Books kept vertically supported by a pot."
+                height="60"
+                width="75"
+              />
+              <div class="related-info-block">
+                <a
+                  href="https://www.freecodecamp.org/news/learn-javascript-free-js-courses-for-beginners/"
+                  target="_blank"
+                  >Learn JavaScript</a
+                >
+                <p class="related-author">By Jessica Wilkins</p>
+              </div>
+            </div>
           </li>
         </ul>
       </aside>
 
-      <footer>
+      <footer class="footer">
         <p id="copyright-msg" class="copyright text">
           Copyright &copy; 2022 by The Code Magazine.
         </p>
