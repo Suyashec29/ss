@@ -228,19 +228,6 @@ nav:last-child {
 .related-author {
   margin: 0px;
 }
-/* 
-.main-head {
-  background-color: yellow;
-}
-.article-body {
-  background-color: red;
-}
-.aside {
-  background-color: lightgreen;
-}
-.footer {
-  background-color: darkblue;
-} */
 
 .container {
   display: grid;
@@ -253,9 +240,9 @@ nav:last-child {
 .main-head {
   grid-column: 1 / -1;
 }
-.article-body {
-}
+
 .aside {
+  align-self: start;
 }
 .footer {
   grid-column: 1 / -1;
