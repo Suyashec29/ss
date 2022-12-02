@@ -214,6 +214,11 @@ footer {
   color: #495057;
 }
 
+h1::first-letter {
+  border-top: 8px solid #087f5b;
+  padding-top: 3px;
+}
+
 /* 
 FOR COLORS
 open color
