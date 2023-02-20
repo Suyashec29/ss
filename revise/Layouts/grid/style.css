@@ -1,0 +1,50 @@
+.container {
+  background-color: #f8f9fa;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  row-gap: 30px;
+  /* For the grid items inside the grid cell. */
+  justify-items: stretch;
+  align-items: stretch;
+  /* If the grid is small than the container. */
+  justify-content: start;
+  align-content: start;
+}
+
+.block1 {
+  background-color: #d0bfff;
+  grid-column: 1 / -2;
+  grid-row: -1/ -2;
+}
+.block2 {
+  background-color: #a5d8ff;
+}
+.block3 {
+  background-color: #96f2d7;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.block4 {
+  background-color: #ffec99;
+}
+.block5 {
+  background-color: #fcc2d7;
+}
+.block6 {
+  background-color: #d61355;
+  justify-self: stretch;
+  grid-column: 1/2;
+  grid-row: 1 / span 2;
+}
+.block7 {
+  background-color: #e8d2a6;
+}
+.block8 {
+  background-color: #03c988;
+}
+.block9 {
+  background-color: #c780fa;
+}

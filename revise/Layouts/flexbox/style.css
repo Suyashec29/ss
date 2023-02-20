@@ -1,0 +1,51 @@
+.container {
+  background-color: #f8f0fc;
+  height: 600px;
+  display: flex;
+  gap: 0px;
+  /* flex container properties */
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch; /*This property affects align-items*/
+}
+
+.block1 {
+  background-color: #d6336c;
+
+  width: 70px;
+  height: 50px;
+}
+
+.block2 {
+  background-color: #12b886;
+  width: 70px;
+  height: 50px;
+}
+
+.block3 {
+  background-color: #4263eb;
+  width: 70px;
+  height: 50px;
+}
+
+.block4 {
+  background-color: #f59f00;
+  width: 70px;
+  height: 50px;
+}
+
+.block5 {
+  background-color: #000000;
+  width: 70px;
+  height: 50px;
+  /* flex item properties */
+  align-self: auto;
+  order: -1;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+
+  flex: 0 1 auto;
+}
