@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Forms</title>
+    <meta charset="UTF-8" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1 class="title">Types of Forms</h1>
+        <p>Different types of elements used in a form</p>
+      </div>
+      <form>
+        <fieldset>
+          <label for="name" class="input-text"
+            >Name
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder=" name"
+              required
+            />
+          </label>
+
+          <label for="age" class="input-text"
+            >Age
+            <input
+              type="number"
+              id="age"
+              name="age"
+              placeholder=" age"
+              min="10"
+              max="120"
+              required
+          /></label>
+
+          <label for="password" class="input-text">
+            Password
+            <input
+              id="password"
+              type="password"
+              placeholder=" password"
+              pattern="[A-Za-z0-9]{3,7}"
+              required
+            />
+          </label>
+        </fieldset>
+        <hr />
+        <fieldset>
+          <label for="male">
+            <input
+              type="radio"
+              id="male"
+              class="inline"
+              name="gender"
+              required
+            />
+            Male</label
+          >
+          <label for="female">
+            <input
+              type="radio"
+              id="female"
+              class="inline"
+              name="gender"
+              required
+            />
+            Female</label
+          >
+          <label for="binary">
+            <input
+              type="radio"
+              id="binary"
+              class="inline"
+              name="gender"
+              required
+            />
+            Binary</label
+          >
+          <label id="forCheckbox" for="checkbox"
+            ><input id="checkbox" type="checkbox" class="inline" required />
+            Accept Terms and Condtions</label
+          >
+        </fieldset>
+        <hr />
+        <fieldset>
+          <label for="fileInput" class="long-input"
+            >Picture <input type="file" id="fileInput" name="file" required
+          /></label>
+          <label for="select" class="long-input">
+            How did you hear about us?
+            <select id="select" class="select" required>
+              <option value="1">From no one</option>
+              <option value="2">From a Friend</option>
+              <option value="3">From Social Media</option>
+              <option value="4">From an Ad</option>
+              <option value="5">From your Family</option>
+            </select>
+          </label>
+          <label for="bio" class="long-input"
+            >Your Bio:
+            <textarea
+              id="bio"
+              class="text-area"
+              rows="6"
+              placeholder=" I love to code in dream..."
+              required
+            ></textarea>
+          </label>
+        </fieldset>
+        <hr />
+        <label for="submit"
+          ><input id="submit" class="submit" type="submit" value="Submit"
+        /></label>
+      </form>
+    </div>
+  </body>
+</html>
