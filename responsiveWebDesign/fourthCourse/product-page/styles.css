@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 85%;
+  margin: 0 auto;
+  background-color: #6a080e;
+  font-family: sans-serif;
+}
+
+.header {
+  background-color: #d21722;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.text-and-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.site-name {
+  font-size: 64px;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+
+.logo {
+  width: 40%;
+  height: auto;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  gap: 20px;
+  font-size: 32px;
+  font-family: "Anton", serif;
+  font-weight: 500;
+  padding-top: 20px;
+  letter-spacing: 2px;
+}
+
+a {
+  border-bottom: 10px solid transparent;
+}
+
+a:hover {
+  border-bottom: 10px solid white;
+  transition: 200ms;
+}
+
+.section-1 {
+}
+
+.just-do-it {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 200px;
+  font-weight: bolder;
+  position: absolute;
+  left: 110px;
+  color: white;
+  font-family: "Anton", serif;
+  line-height: 1.2;
+  letter-spacing: 5px;
+}
+
+.do {
+  color: #6a080e;
+}
+
+.big-image {
+  width: 100%;
+  float: left;
+  height: auto;
+}
