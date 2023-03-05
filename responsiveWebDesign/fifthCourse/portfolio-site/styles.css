@@ -1,0 +1,114 @@
+/* WHOLE */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-width: 600px;
+}
+
+.container {
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/* HEADER */
+.header {
+  background-color: #3fa796;
+  font-size: 28px;
+  font-weight: bold;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 30px 20px;
+  font-weight: bold;
+  font-family: "Rampart one", sans-serif;
+}
+.nav-link:hover {
+  background-color: #f5e9cf;
+  color: #4f7c79;
+}
+
+/* -------------------------------------------------------------------------- */
+/* SECTION */
+
+.section-1 {
+  margin-top: 90px;
+  background-color: #a10035;
+  color: #ff9f29;
+
+  height: 50vw;
+}
+
+.intro-text {
+  text-align: center;
+  text-shadow: 4px 4px 8px #5a011f;
+  font-size: 72px;
+  font-weight: 700;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 5px;
+  padding-top: 100px;
+}
+
+.sub-inro-text {
+  text-align: center;
+  font-size: 24px;
+  color: lightpink;
+}
+
+.auth-img {
+  display: block;
+  width: 20%;
+  height: auto;
+  border: 20px solid #bc0341;
+  border-radius: 50%;
+  box-shadow: 4px 8px 20px 2px #5a011f;
+  margin: 0 auto;
+  margin-top: 50px;
+  object-fit: fill;
+}
+
+.section-2 {
+  background-color: #19032a;
+  height: 50vw;
+}
+
+.section-2-intro-text {
+  color: #ff9999;
+  font-size: 48px;
+  padding-top: 40px;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.section-3 {
+  height: 100vw;
+  background-color: #cb640b;
+}
+.section-3-intro-text {
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 3px;
+}
