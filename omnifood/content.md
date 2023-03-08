@@ -132,6 +132,7 @@ Privacy & terms
 - Logo + Navigation
 - Hero
 - Featured in
+- How it works
 - Meals (and list of diets)
 - Testimonial + gallery
 - Pricing + features
