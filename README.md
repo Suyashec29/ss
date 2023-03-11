@@ -2,6 +2,8 @@
 
 Made with html and css
 
+omnifood-sunyog.netlify.app
+
 https://sunyogg.github.io/shoe-site/
 
 https://sunyogg.github.io/tribute-page/
