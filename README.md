@@ -2,7 +2,7 @@
 
 Made with html and css
 
-omnifood-sunyog.netlify.app
+https://omnifood-sunyog.netlify.app
 
 https://sunyogg.github.io/shoe-site/
 
