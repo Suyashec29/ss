@@ -1,0 +1,12 @@
+.flex-layout {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 6rem;
+  &-item-1 {
+    width: 43%;
+  }
+
+  &-item-2 {
+    width: 43%;
+  }
+}
