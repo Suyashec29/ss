@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="flexbox in detail" />
+    <link rel="stylesheet" href="styles.css" />
+    <title></title>
+  </head>
+  <body>
+    <h1>Analyzing Flexbox</h1>
+    <div class="flex-container">
+      <div class="flex-items item-1">item-1</div>
+      <div class="flex-items item-2">item-2</div>
+      <div class="flex-items item-3">item-3</div>
+      <div class="flex-items item-4">item-4</div>
+      <div class="flex-items item-5">item-5</div>
+    </div>
+    <p>
+      Let's say this is a grey container and it has child element having maroon
+      color. Now if we use 'display:flex' in parent container then it'll become
+      a flexbox containing flex-items. These flex items by default will have
+      height same as the parent(grey container) i.e. their 'height:100%'. Now if
+      you want to change this default behavior, you can enclose these flex items
+      into a div element, now the child element will have the dimension
+      depending on the type of element, but those div element will now be the
+      flex-items (not maroon colored elements). This problem can also be solved
+      by using align-items property (set align-items to any value)
+    </p>
+    <p>
+      However on setting 'flex-direction' to 'column', the problem arises again,
+      but this time the width flex-item is equal to the width of parent i.e.
+      'width:100%' and this time we cannot simply solve the problem by enclosing
+      those flex-items into a div element. This problem can be solved by
+      enclosing those flex items in div blocks and then set display of
+      flex-items(maroon) to inline or block. This problem can also be solved by
+      using align-items property (set align-items to any value).
+    </p>
+  </body>
+</html>
