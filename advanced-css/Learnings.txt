@@ -4,6 +4,9 @@ clip-path: polygon(50% 0, 100% 100%, 0 100%);
 clip-path: polygon(0 40%, 40% 40%, 40% 0, 100% 50%, 40% 100%, 40% 60%, 0 60%);
 clippy - css clip path maker.
 
+We can also use transform: skewY(-7deg); instead of clip-path and then use
+skewY(+7deg) on child elements.
+
  When we express a length measurement in percentages, like height, a padding, 
  a margin, or something else, the reference is always the parent element's width.
 
@@ -20,8 +23,21 @@ The inherit keyword forces inheritance on a certain property.
 The initial keyword resets a property to its initial value.
 
 
+Gradient on text
+text {
+  background: linear-gradient(
+    to right,
+    $color-primary,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+ 
 
-
+ & > *
+ Direct child selector
 
 
 

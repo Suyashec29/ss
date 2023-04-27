@@ -68,3 +68,16 @@ body {
     margin-bottom: 3rem;
   }
 }
+
+i {
+  display: inline-block;
+  font-size: 6rem;
+  background: linear-gradient(
+    to right,
+    $color-primary,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
