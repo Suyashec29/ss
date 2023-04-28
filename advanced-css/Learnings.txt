@@ -35,14 +35,17 @@ text {
   color: transparent;
 }
  
-
  & > *
  Direct child selector
 
+Some of important transform functions:
+transform: translate();
+transform: scale();
+transform: rotate();
+transform: skew();
 
+You cannot put 'background-size' or 'background-position' before the url of 
+image(in background property) in css.
 
-
-
-
-
-
+If you want to put special effects on a picture it's better to implement that
+picture in css than in html.
