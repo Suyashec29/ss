@@ -49,3 +49,16 @@ image(in background property) in css.
 
 If you want to put special effects on a picture it's better to implement that
 picture in css than in html.
+
+Don't forget the filter property. It has many usefull properties.
+
+We can fix the transition glitch by setting backface-visibility to hidden.
+
+clip-path property takes care of overflow hidden, if we would have set
+border-radius to 50% on the box containing the image then we would also have
+to set overflow property to hidden, but instead of using border-radius if we
+used clip-path property then we don't need to use overflow property.
+
+object-fit property is similar to background-size property but instead 
+object-fit property plays with html element, whereas background-size property
+works on css properties like background or background-image. 

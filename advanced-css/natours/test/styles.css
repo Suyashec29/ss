@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+body {
+}
+.image-block {
+  width: 18rem;
+  height: 18rem;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+}
+.image {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  transform: scale(1.5);
+}
+.name {
+  display: inline-block;
+  width: 4rem;
+  position: absolute;
+  font-size: 1.6rem;
+  color: white;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%) translateY(2rem);
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.story:hover .image {
+  filter: blur(0.5rem);
+  transform: scale(1);
+}
+
+.story:hover .name {
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+}
+.story {
+  width: 75%;
+  margin: 5rem auto;
+  padding: 3rem 6rem;
+  background-color: #f7f7f7;
+  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+
+  display: flex;
+  gap: 2.4rem;
+}
+.text-block {
+  font-size: 1.6rem;
+  color: rgb(66, 66, 66);
+
+  flex-shrink: 2;
+}
+.test-head {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+.text-quote {
+  line-height: 1.8;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 8rem;
+}
+
+/* =============================================== */
+/* Different Effect */
+/* =============================================== */
+
+.image-2 {
+  filter: blur(0.5rem);
+  transform: scale(1);
+}
+.story:hover .image-2 {
+  filter: none;
+  transform: scale(1.5);
+}
+.name-2 {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%);
+}
+.story:hover .name-2 {
+  transform: translateX(-50%) translateY(2rem);
+  opacity: 0;
+}
