@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  width: 50%;
+  margin: 200px auto;
+  height: 200px;
+  background-color: lightskyblue;
+  position: relative;
+  overflow: scroll;
+}
+.form {
+}
+.form-fieldset {
+  border: 0;
+}
+.form-label {
+}
+
+.button {
+  display: inline-block;
+  width: 100%;
+  height: 150%;
+  background: radial-gradient(circle at center, #e66465 0%, #9198e5 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 5;
+  transition: all 0.5s;
+}
+
+.form-input {
+  position: fixed;
+  top: 36%;
+  left: 28%;
+  z-index: 100;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.list-link:link,
+.list-link:visited {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.list-link:hover,
+.list-link:active {
+  color: rgb(155, 155, 155);
+}
+
+.form-input:checked + .form-label .button {
+  opacity: 1;
+  z-index: 10;
+  visibility: visible;
+}
+
+/* .form-input-1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 632px;
+  opacity: 0.2;
+  background-color: red;
+  transition: all 0.3s;
+} */
+
+.blocks {
+  width: 20%;
+  margin: 20px auto;
+  height: 30px;
+  background-color: goldenrod;
+  cursor: pointer;
+}
