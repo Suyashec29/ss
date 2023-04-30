@@ -41,3 +41,23 @@
   padding: 15rem 0;
   position: relative;
 }
+
+.section-booking {
+  background: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  padding: 15rem 0;
+}
+
+.book {
+  width: 95%;
+  margin: 0 auto;
+  background: linear-gradient(105deg, rgba(white, 0.9) 50%, transparent 50%),
+    url(/img/nat-10.jpg);
+  background-size: cover;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
