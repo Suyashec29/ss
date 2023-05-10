@@ -76,3 +76,16 @@ syntax: Parent firstSibling + secondSibling {} - to select the secondSibling
 
 if we set opacity to 0 but not set visibility to hidden then element will still
 be on the page and only it's opacity will be gone.
+
+
+<picture class="footer__logo">
+    <source
+      srcset=
+      "img/logo-green-small-1x.png 1x, 
+      img/logo-green-small-2x.png 2x"
+      media="(max-width: 37.5rem)"
+    />
+    <img
+      srcset="/img/logo-green-1x.png 1x, /img/logo-green-2x.png 2x"
+      alt="logo"/>
+</picture>

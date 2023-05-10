@@ -171,4 +171,64 @@
       font-weight: 200;
     }
   }
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    background-color: $color-white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
+
+    &__side {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      position: relative;
+      background-color: inherit;
+      box-shadow: none;
+      &--front {
+        display: block;
+        border-radius: 0px;
+      }
+      &--back {
+        transform: rotateY(0deg);
+        height: auto;
+        border-radius: 0px;
+        display: block;
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      }
+
+      // card:hover card__side {}
+    }
+    &:hover &__side--front {
+      transform: rotateY(0deg);
+    }
+    &:hover &__side--back {
+      transform: rotateY(0deg); //######################################
+    }
+
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0%;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+    }
+    &__details {
+      padding: 1rem 3rem;
+      font-size: 1.8rem;
+    }
+    &__price {
+      &-box {
+        margin-bottom: 2rem;
+      }
+      &-value {
+        font-size: 5rem;
+      }
+    }
+  }
+  @include respond(phone) {
+    width: 70%;
+  }
 }

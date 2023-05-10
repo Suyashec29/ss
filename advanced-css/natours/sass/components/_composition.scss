@@ -1,5 +1,9 @@
 .composition {
   position: relative;
+  @include respond(tab-port) {
+    display: flex;
+    justify-content: center;
+  }
   &__photo {
     display: inline-block;
     width: 55%;
@@ -8,6 +12,10 @@
     position: absolute;
     transition: all 0.2s;
     outline-offset: 2rem;
+    @include respond(tab-port) {
+      position: static;
+      box-shadow: 0 1.5rem 3rem 0 rgba($color-black, 0.2);
+    }
 
     &:hover {
       transform: scale(1.05) translateY(-0.5rem);
@@ -22,6 +30,9 @@
     &--p2 {
       right: 0;
       top: 2rem;
+      @include respond(tab-port) {
+        transform: scale(1.3);
+      }
     }
     &--p3 {
       left: 20%;

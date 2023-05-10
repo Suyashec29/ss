@@ -19,6 +19,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__icon {
@@ -78,6 +86,14 @@
     z-index: 10;
     // transform: scale(70);
     transition: all 0.7s;
+    @include respond(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+    @include respond(phone) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
   &__nav {
     height: 100vh;
