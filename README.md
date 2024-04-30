@@ -4,6 +4,8 @@ Made with html and css
 
 https://omnifood-sunyog.netlify.app
 
+https://natours-sunyog.netlify.app/
+
 https://trillo-sunyog.netlify.app
 
 https://twitter-clone-sunyog.netlify.app
